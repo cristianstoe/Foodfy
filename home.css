@@ -23,6 +23,7 @@ body {
     margin-right: 2.1%;
 }
 
+
 #title {
     color: #111111;
     text-decoration: none;
@@ -30,12 +31,13 @@ body {
     font-family: 'Sriracha';
     letter-spacing: 1.65px;
     margin-right: 8.7%;
-    margin-left: 260px;
+    margin-left: 195px;
+    margin-bottom: 5%;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 230px auto 230px;
+    grid-template-columns: 231px auto 231px;
     grid-template-rows: 366px 10%
 }
 
