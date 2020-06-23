@@ -78,31 +78,30 @@ body {
 
 .modal {
     background-color: white;
-    width: 660px;
-    height: 413px;
-    position: absolute;
+    width: 47.1%;
+    height: 36.8%;
+    position: relative;
     left: 50%;
     top: 50%;
-    margin-left: -350px;
+    margin-left: -250px;
     margin-top: -180px;
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
 
+.modal img{
+    margin: 30px auto;
+    
 }
 
 .modal .close-modal {
     color: black;
     position: relative;
     cursor: pointer;
-    display: flex;
-    align-self: flex-end;
-
+    text-align: center;
+    margin-top: 100px;
 }
-
-.modal img{
-    width: 60%;
-
-}
-
 
 .modal-overlay.active {
     opacity: 1;
