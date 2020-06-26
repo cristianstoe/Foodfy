@@ -1,0 +1,136 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+.menu {
+    padding: 36.1px;
+}
+
+.menu a {
+    color: #111111;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Roboto';
+    margin-right: 2.1%;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 231px auto 231px;
+    grid-template-rows: 280px 170px 1000px;
+}
+
+.intro {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    object-fit: cover;
+    border-radius: 6px;
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 50px;
+    text-align: center;
+}
+
+.title p {
+    font-family: 400;
+    font-size: 20px;
+    color: #777777;
+}
+
+.ingredients {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.ingredients h2 {
+    padding: 30px;
+    padding-left: 0;
+}
+
+.ingredients ul {
+    margin-left: 18px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.ingredients li {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+.ingredients {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.ingredients h2 {
+    padding: 30px;
+    padding-left: 0;
+}
+
+.directions ol {
+    margin-left: 18px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.directions li {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+#title {
+    color: #111111;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Sriracha';
+    letter-spacing: 1.65px;
+    margin-right: 8.7%;
+    margin-left: 195px;
+    margin-bottom: 5%;
+}
+
+.footer-box {
+    margin-top: 50px;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    align-items: flex-end;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 23px 0;
+    display: flex;
+    background: #EEEEEE;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+    font-family: 400;
+    font-size: 14px;
+    color: #999999;
+}
