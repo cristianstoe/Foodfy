@@ -8,3 +8,21 @@ for (let card of cards) {
         window.location.href = `/receitas/${classID}`
     })
 }
+
+for(let card of cards){
+    const hidden = card.querySelector('.hidden')
+    const secret = card.querySelector('.secret')
+
+    secret.addEventListener("click", function(){
+
+        if(hidden.classList.contains("active")){
+
+            hidden.classList.remove("active")
+            secret.textContent = "Remover"
+        }else{
+            
+            hidden.classList.add("active")
+            secret.textContent = "Mostrar"
+        }
+    })
+}
