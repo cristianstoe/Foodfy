@@ -32,6 +32,9 @@ server.get("/receitas/:index", function (req, res) {
     return res.render(`recipeinfo`, {items: infos[recipeIndex]})
   })
 
+//   let text_info = infos.information.split("\n").join("<br />") 
+
+
 
 
 server.listen(1597, function () {

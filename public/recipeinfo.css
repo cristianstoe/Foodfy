@@ -4,10 +4,11 @@
     margin: 0;
 }
 
-body {
+html, body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
     width: 100%;
+    height: 100%;
 }
 
 .menu {
@@ -26,8 +27,11 @@ body {
 .container {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 231px auto 231px;
-    grid-template-rows: 280px 170px 40% 100%;
+    /* grid-template-columns: 231px auto 231px;
+    grid-template-rows: 280px 170px 40% 100%; */
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    /* grid-template-rows: 30% 10% 40% 40% 40%;    */
+    grid-template-rows: 300px 0.2fr 1fr 0.6fr 0.5fr; 
 }
 
 .intro {
@@ -59,6 +63,7 @@ body {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+    overflow: hidden;
 }
 
 .ingredients h2 {
@@ -86,6 +91,7 @@ body {
 }
 
 .directions h2 {
+    
     padding: 30px;
     padding-left: 0;
 }
@@ -101,6 +107,33 @@ body {
     line-height: 28px;
 }
 
+
+.add_info {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.add_info h2 {
+    
+    padding: 30px;
+    padding-left: 0;
+}
+
+.add_info ol {
+    margin-left: 18px;
+}
+
+.add_info p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    margin-bottom: 5%;
+}
+
+
 #title {
     color: #111111;
     text-decoration: none;
@@ -111,25 +144,14 @@ body {
     margin-left: 195px;
     margin-bottom: 5%;
 }
-/* 
-.footer-box {
-    margin-top: 50px;
-    display: flex;
-    flex: 1;
-    width: 100%;
-    align-items: flex-end;
-}
 
-footer {
-    width: 100%;
-    text-align: center;
-    padding: 23px 0;
+footer{
     display: flex;
     background: #EEEEEE;
-    height: 15px;
+    height: 62px;
     justify-content: center;
     align-items: center;
-    font-family: 400;
+    font-family: 400;   
     font-size: 14px;
     color: #999999;
-} */
+}

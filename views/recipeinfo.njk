@@ -49,23 +49,29 @@
 
             </div>
 
-                <div class="directions">
-                    <h2>Modo de preparo</h2>
-                    <ol>
-                        {%for item in items.preparation%}
-                            <li>{{item}}</li>
-                            {%endfor%}
-                     </ol>
+            <div class="directions">
+                <h2>Modo de preparo</h2>
+                <ol>
+                    {%for item in items.preparation%}
+                        <li>{{item}}</li>
+                        {%endfor%}
+                    </ol>
 
-                </div>
+            </div>
+
+            <div class="add_info">
+                <h2>Informações adicionais</h2>
+               <p>{{items.information}}</p>
+
+            </div>
 
         </div>
 
-                <div class="footer-box">
-                    <footer>
-                        <p>Todos os direitos reservados, receitas Foodfy</p>
-                    </footer>
-                </div>
-            </body>
+        <footer>
+                <p>Todos direitos reservados, receitas Foodfy.</p>
+        </footer>
+        
+        <script src="scripts.js"></script>
+    </body>
 
-        </html>
+</html>

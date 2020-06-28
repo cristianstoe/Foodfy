@@ -29,7 +29,7 @@
             <div class="top">
 
                 {% for item in items%}
-                    <div class="card">
+                    <div class="card" id="{{loop.index0}}">
                         <div class="cardImg">
                             <img src="{{item.image}}" alt="">
                         </div>
@@ -37,7 +37,8 @@
                             <h3>{{item.title}}</h3>
                         </div>
                         <div class="cardAuthor">
-                            <p>por {{item.author}}</p>
+                            <p>por
+                                {{item.author}}</p>
                         </div>
                     </div>
                     {%endfor%}
@@ -46,6 +47,8 @@
             <footer>
                 <p>Todos direitos reservados, receitas Foodfy.</p>
             </footer>
-        </body>
+        </div>
 
-    </html>
+        <script src="scripts.js"></script>
+    </body>
+</html>
