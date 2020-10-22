@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Foodfy</title>
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
@@ -17,37 +17,12 @@
                 <a href="/receitas">Receitas</a>
             </div>
         </header>
-        <div class="container">
-            <div class="intro">
-                <section>
-                    <h1>As melhores receitas</h1>
-                    <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
-                </section>
-                <img src="assets/119236-OQ05QX-268.png" alt="">
-            </div>
-            <h2>Mais acessadas</h2>
-            <div class="top">
+        
+    {% block content %}{% endblock %}
 
-                {% for item in items%}
-                    <div class="card" id="{{loop.index0}}">
-                        <div class="cardImg">
-                            <img src="{{item.image}}" alt="">
-                        </div>
-                        <div class="cardTitle">
-                            <h3>{{item.title}}</h3>
-                        </div>
-                        <div class="cardAuthor">
-                            <p>por
-                                {{item.author}}</p>
-                        </div>
-                    </div>
-                    {%endfor%}
-                </div>
-            </div>
             <footer>
                 <p>Todos direitos reservados, receitas Foodfy.</p>
             </footer>
-        </div>
 
         <script src="scripts.js"></script>
     </body>

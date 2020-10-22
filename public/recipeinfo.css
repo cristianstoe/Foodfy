@@ -24,7 +24,7 @@ html, body {
     margin-right: 2.1%;
 }
 
-.container {
+.containerRecipeinfo {
     margin: 0 auto;
     display: grid;
     /* grid-template-columns: 231px auto 231px;
