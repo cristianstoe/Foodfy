@@ -44,6 +44,10 @@ body {
     gap: 30px;
 }
 
+.card{
+    cursor: pointer;
+}
+
 .cardImg {
     text-align: center;
 }
