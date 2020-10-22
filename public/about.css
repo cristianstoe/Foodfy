@@ -34,7 +34,7 @@ body {
     margin-left: 195px;
     margin-bottom: 5%;
 }
-.container{
+.containerAbout{
     display: grid;
     grid-template-columns: 230px auto 230px;
     grid-template-rows: 354px 354px 200px;
@@ -62,19 +62,19 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
 } 
-.container h2{
+.containerAbout h2{
     font-family: 700;
     font-size: 20px;
     color: #111111;
 }
 
-.container h1{
+.containerAbout h1{
     font-family: 700;
     font-size: 24px;
     color: #111111;
 }
 
-.container p{
+.containerAbout p{
     margin-top: 20px;
     font-family: 400;
     font-size: 18px;
