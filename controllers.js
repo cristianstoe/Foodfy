@@ -1,5 +1,5 @@
 const fs = require(`fs`)
-const data = require(`./data`)
+// const data = require(`./data`)
 const infos = require(`./data`)
 const { Z_DATA_ERROR } = require("zlib")
 
@@ -21,3 +21,23 @@ exports.recipeinfo =  function (req, res) {
   
     return res.render(`recipeinfo`, {items: infos[recipeIndex]})
   }
+
+  // ADM //
+
+exports.index = function (req, res) {
+    return res.send(`Lista de receitas`)
+}
+
+exports.create = function (req, res) {
+    return res.render(`create`, { items: infos })
+}
+
+exports.show = function(req, res){
+    const id = req.params.id
+
+    return res.send (`Mostrar receita // O Id fornecido é ${id}`)
+}
+
+exports.edit = function (req, res){
+    return res.send(`Formulario de edicao`)
+}

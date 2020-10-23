@@ -1,0 +1,37 @@
+    <div class="item">
+        <div class="recipeName">Imagem da receita</div>
+        <div>
+            <input type="url" name="recipe_url" placeholder="http://" value="{{member.avatar_url}}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="recipeName">Nome da receita</div>
+        <div>
+            <input type="text" name="name" placeholder="" value="{{member.name}}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="recipeName">Ingredientes</div>
+        <div>
+            <input type="text" name="ingredients" value="{{member.name}}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="recipeName">Modo de preparo</div>
+        <div>
+            <input type="text" name="preparation" value="{{member.name}}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="recipeName">Informações adicionais</div>
+        <div>
+            <textarea id="recipeForm" class="last" type="text" name="preparation" value="{{member.name}}">  </textarea>
+        </div>
+    </div>
+
+    <button type="submit" action="#">Salvar receita</button>
+
