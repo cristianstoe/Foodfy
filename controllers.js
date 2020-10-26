@@ -1,6 +1,6 @@
 const fs = require(`fs`)
-// const data = require(`./data`)
 const infos = require(`./data`)
+const data = require(`./data.json`)
 const { Z_DATA_ERROR } = require("zlib")
 
 exports.home = function (req, res) {
@@ -40,4 +40,10 @@ exports.show = function(req, res){
 
 exports.edit = function (req, res){
     return res.send(`Formulario de edicao`)
+}
+
+
+exports.post = function(req, res){
+    return res.send(req.body)
+
 }

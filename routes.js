@@ -26,7 +26,7 @@ routes.get("/admin/:id/edit", controllers.edit); // mostrar formulario de edicao
 
 
 
-// routes.post("/admin/recipes", controllers.post);
+routes.post("/admin/recipes", controllers.post);
 // routes.put("/admin/recipes", controllers.put);
 // routes.delete("/admin/recipes", controllers.delete);
 
