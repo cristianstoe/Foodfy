@@ -1,3 +1,31 @@
 {
-    "recipes": []
+  "recipes": [
+    {
+      "ingredients": [
+        "hkjhkjh"
+      ],
+      "name": "jklh;jk",
+      "recipe_url": "https://google.com",
+      "preparation": "j;khkjlhhjk",
+      "moreInfo": "asdasdasd"
+    },
+    {
+      "name": "jklh;jk",
+      "ingredients": [
+        "hkjhkjh"
+      ],
+      "recipe_url": "https://google.com",
+      "preparation": "j;khkjlhhjk",
+      "moreInfo": "asdasdasd"
+    },
+    {
+      "recipe_url": "https://google.com",
+      "name": "jklh;jk",
+      "ingredients": [
+        "hkjhkjh"
+      ],
+      "preparation": "j;khkjlhhjk",
+      "moreInfo": "asdasdasd"
+    }
+  ]
 }
