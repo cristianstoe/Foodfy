@@ -315,8 +315,15 @@ body {
     grid-row-start: 1;
 }
 
-.first .recipeName, .recipeIngredients, .recipeStep{
+.first .recipeName{
     margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.first .recipeNameFirst{
+    margin-top: 50px;
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: bold;
@@ -328,6 +335,7 @@ body {
 }
 
 form input, select, textarea{
+    margin-top: 10px;
     width: 100%;
     padding: 1%;
     border: 2px solid gray;
@@ -372,4 +380,16 @@ a.button{
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
+}
+
+.first .add-step, .add-ingredient{
+    outline: transparent;
+    margin-top: 15px;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: #6558C3;
+    text-align: right;
 }
