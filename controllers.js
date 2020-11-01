@@ -25,7 +25,7 @@ exports.recipeinfo =  function (req, res) {
   // ADM //
 
 exports.index = function (req, res) {
-    return res.send(`Lista de receitas`, {recipes: data.recipes})
+    return res.render(`index`, {recipes: data})
 }
 
 exports.create = function (req, res) {
@@ -74,3 +74,22 @@ exports.post = function(req, res){
 
 
 }
+
+// exports.delete = function (req, res) {
+//     const id = req.params.id
+    
+//     const filteredRecipe = data.recipes.filter(function(recipe){
+//         return recipe.id != id
+//     })
+    
+    
+//     data.recipes = filteredRecipe
+    
+//     fs.writeFile(`data.json`, JSON.stringify(data, null, 2), function (err) {
+//         if (err) return res.send(`Write file error`)
+//         return res.redirect(`/`)
+    
+//     })
+    
+    
+//     }

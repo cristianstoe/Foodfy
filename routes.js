@@ -4,8 +4,6 @@ const controllers = require(`./controllers`)
 const infos = require(`./data`)
 
 
-
-
 routes.get(`/`, controllers.home)
 
 routes.get(`/sobre`, controllers.about)
