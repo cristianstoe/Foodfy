@@ -32,7 +32,7 @@
             </div>
 
             <div class="title">
-                <h1>{{items.title}}</h1>
+                <h1>{{items.name}}</h1>
                 <p>por
                     {{items.author}}</p>
 
@@ -41,7 +41,7 @@
             <div class="ingredients">
                 <h2>Ingredientes  </h2>
                 <ul>
-                    {%for item in recipes.ingredients%}
+                    {%for item in items.ingredients%}
                         <li>{{item}}</li>
                         {%endfor%}
                 </ul>
@@ -60,7 +60,7 @@
 
             <div class="add_info">
                 <h2>Informações adicionais</h2>
-               <p>{{recipes.moreInfo}}</p>
+               <p>{{items.information}}</p>
 
             </div>
 
@@ -72,7 +72,6 @@
 
         <script src="scripts.js">
 
-        console.log(recipes)
         </script>
     </body>
 

@@ -1,76 +1,7 @@
 {
   "recipes": [
     {
-      "ingredients": [
-        "hkjhkjh"
-      ],
-      "name": "jklh;jk",
       "recipe_url": "https://google.com",
-      "preparation": "j;khkjlhhjk",
-      "moreInfo": "asdasdasd"
-    },
-    {
-      "name": "jklh;jk",
-      "ingredients": [
-        "hkjhkjh"
-      ],
-      "recipe_url": "https://google.com",
-      "preparation": "j;khkjlhhjk",
-      "moreInfo": "asdasdasd"
-    },
-    {
-      "recipe_url": "https://google.com",
-      "name": "jklh;jk",
-      "ingredients": [
-        "hkjhkjh"
-      ],
-      "preparation": "j;khkjlhhjk",
-      "moreInfo": "asdasdasd"
-    },
-    {
-      "recipe_url": "https://google.com",
-      "name": "akidsjakj",
-      "ingredients": [
-        "lk;j",
-        ";lkj",
-        "klj"
-      ],
-      "preparation": "dddddd",
-      "moreInfo": "  ddddsa  ddddsa  ddddsa  ddddsa  ddddsa  ddddsa  ddddsa  ddddsa  ddddsa  ddddsa  ddddsa  ddddsa  ddddsa  ddddsa  ddddsa"
-    },
-    {
-      "recipe_url": "htpps://google.com",
-      "name": "jsahdkjash",
-      "ingredients": [
-        "lkjhkj;hk;jlh",
-        "sdsadsadasd",
-        "sadas"
-      ],
-      "preparation": [
-        "wwwww",
-        "e",
-        "dssd"
-      ],
-      "moreInfo": "  sadasdasdasd"
-    },
-    {
-      "recipe_url": "htpps://google.com",
-      "name": "Macarrao",
-      "ingredients": [
-        "samdknjasdm",
-        "asdasdas",
-        "sadasdasd",
-        "asdasd",
-        ""
-      ],
-      "preparation": [
-        "dajshdjkashd",
-        "asdasdasd"
-      ],
-      "moreInfo": "  passe o oleo\r\n"
-    },
-    {
-      "recipe_url": "htpps://google.com",
       "name": "Macarrao",
       "ingredients": [
         "Oleo",
@@ -78,12 +9,12 @@
         "Brocolis"
       ],
       "preparation": [
-        "Misture",
-        "Adiucione isso e aquilo",
-        "Faća isso e aquilo depois",
-        "Finalize com queijo ralado"
+        "Ferver",
+        "Adicionar",
+        "Misturar isso isso e aquilo",
+        ""
       ],
-      "moreInfo": "  Sirva juntamente com o brócolis e pimenta calabresa a gosto para realçar o sabor."
+      "moreInfo": "Sirva com pimenta calabresa a gosto e complemente com queijo ralado tipo parmesão"
     }
   ]
 }
