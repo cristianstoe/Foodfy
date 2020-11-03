@@ -41,7 +41,7 @@
             <div class="ingredients">
                 <h2>Ingredientes  </h2>
                 <ul>
-                    {%for item in items.ingredients%}
+                    {%for item in recipes.ingredients%}
                         <li>{{item}}</li>
                         {%endfor%}
                 </ul>
@@ -60,7 +60,7 @@
 
             <div class="add_info">
                 <h2>Informações adicionais</h2>
-               <p>{{items.information}}</p>
+               <p>{{recipes.moreInfo}}</p>
 
             </div>
 
@@ -70,7 +70,10 @@
                 <p>Todos direitos reservados, receitas Foodfy.</p>
         </footer>
 
-        <script src="scripts.js"></script>
+        <script src="scripts.js">
+
+        console.log(recipes)
+        </script>
     </body>
 
 </html>

@@ -28,9 +28,9 @@ routes.post("/admin/recipes", controllers.post);
 
 
 
+// routes.delete("/admin/recipes", controllers.delete);
 
 // routes.put("/admin/recipes", controllers.put);
-// routes.delete("/admin/recipes", controllers.delete);
 
 
 module.exports = routes

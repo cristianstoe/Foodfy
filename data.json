@@ -68,6 +68,22 @@
         "asdasdasd"
       ],
       "moreInfo": "  passe o oleo\r\n"
+    },
+    {
+      "recipe_url": "htpps://google.com",
+      "name": "Macarrao",
+      "ingredients": [
+        "Oleo",
+        "Queijo",
+        "Brocolis"
+      ],
+      "preparation": [
+        "Misture",
+        "Adiucione isso e aquilo",
+        "Faća isso e aquilo depois",
+        "Finalize com queijo ralado"
+      ],
+      "moreInfo": "  Sirva juntamente com o brócolis e pimenta calabresa a gosto para realçar o sabor."
     }
   ]
 }
