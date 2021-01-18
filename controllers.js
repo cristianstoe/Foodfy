@@ -19,7 +19,7 @@ exports.recipeinfo =  function (req, res) {
     const receitas = [];
     const recipeIndex = req.params.index;
   
-    return res.render(`recipeinfo`, {items: data[recipeIndex]})
+    return res.render(`recipeinfo`, {items: infos[recipeIndex]}) 
   }
 
   // ADM //
