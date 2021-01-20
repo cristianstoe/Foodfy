@@ -12,6 +12,8 @@ routes.get(`/receitas`, controllers.recipes)
 
 routes.get("/receitas/:index", controllers.recipeinfo)
 
+routes.get("/receitas/:id/edit", controllers.edit);
+
 // ADM //
 
 routes.get("/admin/recipes", controllers.index); // mostrar lista de receitas
@@ -20,7 +22,7 @@ routes.get("/admin/create", controllers.create); // criar receita
 
 routes.get("/admin/:id", controllers.show); // exibir detalhes de uma receita
 
-routes.get("/admin/:id/edit", controllers.edit); // mostrar formulario de edicao
+routes.put("/admin/recipes", controllers.edit); // mostrar formulario de edicao
 
 routes.post("/admin/recipes", controllers.post);
 

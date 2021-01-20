@@ -1,30 +1,35 @@
     <div class="item">
         <div class="recipeNameFirst">Imagem da receita</div>
         <div>
-            <input type="url" name="recipe_url" placeholder="http://">
+            <input type="url" name="recipe_url" placeholder="http://" value="{{recipe.recipe_url}}">
         </div>
     </div>
 
     <div class="item">
         <div class="recipeName">Nome da receita</div>
         <div>
-            <input type="text" name="name" placeholder="">
+            <input type="text" name="name" placeholder="" value="{{recipe.name}}">
         </div>
     </div>
 
     <div id="item">
         <div class="recipeName">Ingredientes</div>
+        {% for ingredient in recipe.ingredients%}
         <div class="recipeIngredients">
-            <input type="text" name="ingredients[]" value="" placeholder="Ingrediente" />
+            <input type="text" name="ingredients[]" value="{{ingredient}}" placeholder="Ingrediente" />
         </div>
+        {%endfor%}
     </div>
         <button type="button" class="add-ingredient">Adicionar mais um ingrediente</button>
 
     <div id="itemPrep">
         <div class="recipeName">Modo de Preparo</div>
+        {% for step in recipe.preparation%}
         <div class="recipeSteps">
-            <input type="text" name="preparation" value="" placeholder="Passos" />
+            <input type="text" name="preparation" value="{{step}}" placeholder="Passos" />
         </div>
+        {%endfor%}
+
     </div>
         <button type="button" class="add-step">Adicionar mais um ingrediente</button>
 
@@ -32,7 +37,7 @@
     <div class="item">
         <div class="recipeName">Informações adicionais</div>
         <div>
-            <textarea id="recipeForm" class="last" type="text" name="moreInfo" >  </textarea>
+            <textarea id="recipeForm" class="last" type="text" name="moreInfo"> {{recipe.moreInfo}} </textarea>
         </div>
     </div>
 

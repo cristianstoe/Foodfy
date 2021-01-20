@@ -32,18 +32,6 @@ exports.index = function (req, res) {
 exports.create = function (req, res) {
     return res.render(`create`, { items: data.recipes })
 }
-
-exports.show = function(req, res){
-    const id = req.params.id
-
-    return res.send (`Mostrar receita // O Id fornecido é ${id}`)
-}
-
-exports.edit = function (req, res){
-    return res.send(`Formulario de edicao`)
-}
-
-
 exports.post = function(req, res){
     const keys = Object.keys(req.body)
     for (key of keys) {
@@ -75,6 +63,54 @@ exports.post = function(req, res){
 
 
 }
+
+exports.show = function(req, res){
+    const id = req.params.id
+
+    return res.send (`Mostrar receita // O Id fornecido é ${id}`)
+}
+
+exports.edit = function (req, res){
+    const { id } = req.params.id
+
+    const foundRecipe = data.recipes.find(function (recipe) {
+        return recipe.id == id
+    })
+
+    if (!foundRecipe) return res.send(`Recipe not found`)
+    
+    return res.render(`edit`, {recipe: foundRecipe})
+}
+
+exports.put = function (req, res) {
+    const { id } = req.body
+    let index = 0
+
+    const foundRecipe = data.members.find(function (recipe, index) {
+        if( id == recipe.id ){
+            index = foundIndex
+            return true
+        }
+    })
+
+    if (!foundRecipe) return res.send(`Recipe not found`)
+
+    const recipe = {
+        ...foundRecipe,
+        ...req.body
+    }
+
+    data.instructors[index] = recipe
+
+    fs.writeFile(`data.json`, JSON.stringify(data, null, 2), function (err) {
+        if (err) return res.send(`Write file error`)
+        return res.redirect(`/receitas/${id}`)
+
+    })
+
+
+}
+
 
 // exports.delete = function (req, res) {
 //     const id = req.params.id

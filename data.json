@@ -126,6 +126,51 @@
         "açúcar de confeiteiro e corte em quadrados."
       ],
       "moreInfo": ""
+    },
+    {
+      "recipe_url": "https://img.itdg.com.br/tdg/images/recipes/000/015/559/39248/39248_original.jpg?mode=crop&width=710&height=400",
+      "name": "MACARRÃO COM CALABRESA NA PANELA DE PRESSÃO",
+      "ingredients": [
+        "1 pacote de macarrão penne, parafuso, ou gravatinha",
+        "1 caixinha de extrato/polpa/molho de tomate",
+        "2 caixinha (a mesma medida da caixinha do molho) de água",
+        "1 lata de creme de leite",
+        "1 cebola média picada",
+        "3 gomos de calabresa picados em rodelas finas",
+        "Sal a gosto",
+        "Óleo ou azeite para refogar a cebola e a calabresa"
+      ],
+      "preparation": [
+        "Em uma panela de pressão, doure a cebola e a calabresa.",
+        "Após dourar, adicione o sal, o molho, as 2 medidas de água, o macarrão e o creme de leite.",
+        "Se o macarrão não tiver completamente coberto, coloque mais água.",
+        "Misturar bem, adicionar o sal e fechar a panela.",
+        "Contar 5 minutos a partir do momento em que a panela fizer pressão.",
+        "Polvilhe queijo ralado e bom apetite."
+      ],
+      "moreInfo": "Quer aprender uma outra forma deliciosa de fazer macarrão? Confira a nossa melhor receita de macarrão de forno!\r\n\r\n"
+    },
+    {
+      "recipe_url": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
+      "name": "Triplo bacon burgerrr",
+      "ingredients": [
+        "3 kg de carne moída (escolha uma carne magra e macia)",
+        "300 g de bacon moído",
+        "1 ovo",
+        "3 colheres (sopa) de farinha de trigo",
+        "3 colheres (sopa) de tempero caseiro: feito com alho, sal, cebola, pimenta e cheiro verde processados no liquidificador",
+        "30 ml de água gelada"
+      ],
+      "preparation": [
+        "Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado.",
+        "Faça porções de 90 g a 100 g.",
+        "Forre um plástico molhado em uma bancada e modele os hambúrgueres utilizando um aro como base.",
+        "Faça um de cada vez e retire o aro logo em seguida.",
+        "Forre uma assadeira de metal com plástico, coloque os hambúrgueres e intercale camadas de carne e plásticos (sem apertar).",
+        "Faça no máximo 4 camadas por forma e leve para congelar.",
+        "Retire do congelador, frite ou asse e está pronto."
+      ],
+      "moreInfo": " \r\n\r\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface. "
     }
   ]
 }
