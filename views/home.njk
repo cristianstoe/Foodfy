@@ -15,15 +15,12 @@
                 {% for item in items%}
                     <div class="card" id="{{loop.index0}}">
                         <div class="cardImg">
-                            <img src="{{item.image}}" alt="">
+                            <img src="{{item.recipe_url}}" alt="">
                         </div>
                         <div class="cardTitle">
-                            <h3>{{item.title}}</h3>
+                            <h3>{{item.name}}</h3>
                         </div>
-                        <div class="cardAuthor">
-                            <p>por
-                                {{item.author}}</p>
-                        </div>
+                        
                     </div>
                     {%endfor%}
                 </div>

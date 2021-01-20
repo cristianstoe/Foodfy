@@ -22,8 +22,6 @@ routes.get("/admin/:id", controllers.show); // exibir detalhes de uma receita
 
 routes.get("/admin/:id/edit", controllers.edit); // mostrar formulario de edicao
 
-
-
 routes.post("/admin/recipes", controllers.post);
 
 

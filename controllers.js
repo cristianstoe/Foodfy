@@ -4,32 +4,33 @@ const data = require(`./data.json`)
 const { Z_DATA_ERROR } = require("zlib")
 
 exports.home = function (req, res) {
-    return res.render(`home`, { items: infos })
+   
+    return res.render(`home`, { items: data.recipes })
 }
 
 exports.about =  function (req, res) {
-    return res.render(`about`, { items: infos })
+    return res.render(`about`, { items: data.recipes })
 }
 
 exports.recipes =  function (req, res) {
-    return res.render(`recipes`, { items: infos })
+    return res.render(`recipes`, { items: data.recipes })
 }
 
 exports.recipeinfo =  function (req, res) {
-    const receitas = [];
+    // const receitas = [];
     const recipeIndex = req.params.index;
   
-    return res.render(`recipeinfo`, {items: infos[recipeIndex]}) 
+    return res.render(`recipeinfo`, {items: data.recipes[recipeIndex]}) 
   }
 
   // ADM //
 
 exports.index = function (req, res) {
-    return res.render(`index`, {recipes: data})
+    return res.render(`index`, {recipes: data.recipes})
 }
 
 exports.create = function (req, res) {
-    return res.render(`create`, { items: infos })
+    return res.render(`create`, { items: data.recipes })
 }
 
 exports.show = function(req, res){
