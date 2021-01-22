@@ -10,9 +10,11 @@ routes.get(`/sobre`, controllers.about)
 
 routes.get(`/receitas`, controllers.recipes)
 
-routes.get("/receitas/:index", controllers.recipeinfo)
+routes.get("/receitas/:id", controllers.recipeinfo)
 
 routes.get("/receitas/:id/edit", controllers.edit);
+
+routes.put("/admin/recipes", controllers.put);
 
 // ADM //
 
@@ -22,7 +24,7 @@ routes.get("/admin/create", controllers.create); // criar receita
 
 routes.get("/admin/:id", controllers.show); // exibir detalhes de uma receita
 
-routes.put("/admin/recipes", controllers.edit); // mostrar formulario de edicao
+// routes.get("/admin/recipes", controllers.edit); // mostrar formulario de edicao
 
 routes.post("/admin/recipes", controllers.post);
 
@@ -30,7 +32,6 @@ routes.post("/admin/recipes", controllers.post);
 
 // routes.delete("/admin/recipes", controllers.delete);
 
-// routes.put("/admin/recipes", controllers.put);
 
 
 module.exports = routes

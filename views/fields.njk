@@ -14,21 +14,17 @@
 
     <div id="item">
         <div class="recipeName">Ingredientes</div>
-        {% for ingredient in recipe.ingredients%}
         <div class="recipeIngredients">
             <input type="text" name="ingredients[]" value="{{ingredient}}" placeholder="Ingrediente" />
         </div>
-        {%endfor%}
     </div>
         <button type="button" class="add-ingredient">Adicionar mais um ingrediente</button>
 
     <div id="itemPrep">
         <div class="recipeName">Modo de Preparo</div>
-        {% for step in recipe.preparation%}
         <div class="recipeSteps">
             <input type="text" name="preparation" value="{{step}}" placeholder="Passos" />
         </div>
-        {%endfor%}
 
     </div>
         <button type="button" class="add-step">Adicionar mais um ingrediente</button>

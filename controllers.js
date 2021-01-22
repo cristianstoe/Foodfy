@@ -18,7 +18,7 @@ exports.recipes =  function (req, res) {
 
 exports.recipeinfo =  function (req, res) {
     // const receitas = [];
-    const recipeIndex = req.params.index;
+    const recipeIndex = req.params.id;
   
     return res.render(`recipeinfo`, {items: data.recipes[recipeIndex]}) 
   }
@@ -34,15 +34,20 @@ exports.create = function (req, res) {
 }
 exports.post = function(req, res){
     const keys = Object.keys(req.body)
-    for (key of keys) {
-        if (req.body[key] == ``) {
-            return res.send(`Preencha todos os campos`)
-        }
-    }
+    console.log(keys)
+    // for (key of keys) {
+    //     if (req.body[key] == ``) {
+    //         return res.send(`Preencha todos os campos`)
+    //     }
+    // }
 
-    let { recipe_url, name, ingredients, preparation, moreInfo} = req.body
+
+    req.body.id = Number(data.recipes.length)
+
+    let { id, recipe_url, name, ingredients, preparation, moreInfo} = req.body
 
     data.recipes.push({
+        id,
         recipe_url,
         name,
         ingredients,
@@ -71,7 +76,7 @@ exports.show = function(req, res){
 }
 
 exports.edit = function (req, res){
-    const { id } = req.params.id
+    const id  = req.params.id
 
     const foundRecipe = data.recipes.find(function (recipe) {
         return recipe.id == id
@@ -80,31 +85,35 @@ exports.edit = function (req, res){
     if (!foundRecipe) return res.send(`Recipe not found`)
     
     return res.render(`edit`, {recipe: foundRecipe})
+
+    // return res.send (`Formulario edicao receita // O Id fornecido é ${id}`)
 }
 
 exports.put = function (req, res) {
     const { id } = req.body
     let index = 0
 
-    const foundRecipe = data.members.find(function (recipe, index) {
+    const foundRecipe = data.recipes.find(function (recipe, foundIndex) {
         if( id == recipe.id ){
             index = foundIndex
             return true
         }
+
     })
 
-    if (!foundRecipe) return res.send(`Recipe not found`)
+    if (!foundRecipe) return res.send(`recipe not found`)
 
     const recipe = {
         ...foundRecipe,
-        ...req.body
+        ...req.body,
+        id: Number(req.body.id)
     }
 
-    data.instructors[index] = recipe
+    data.recipes[index] = recipe
 
     fs.writeFile(`data.json`, JSON.stringify(data, null, 2), function (err) {
         if (err) return res.send(`Write file error`)
-        return res.redirect(`/receitas/${id}`)
+        return res.redirect(`/members/${id}`)
 
     })
 
